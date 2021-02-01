@@ -24,6 +24,11 @@ public class RestApi {
        return "response from AWS";
     }
 
+    @GetMapping("/hit2")
+    public String hit2() {
+        return "Endpoint deployed from Jenkins to AWS";
+    }
+
     /**
      * Saving and calling rest call will run in parallel. And Response will be return only after two tasks/threads completes.
      * @return
